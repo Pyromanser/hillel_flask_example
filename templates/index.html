@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+{% if username == "User" %}
+    <p>Hello world!</p>
+{% else %}
+    <p>Hello {{ username }}!</p>
+{% endif %}
+<br>
+<ul>
+    {% for user in users %}
+        <li>{{ user }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
